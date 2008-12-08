@@ -1,0 +1,3 @@
+[submodule "profiles/scf"]
+	path = profiles/scf
+	url = git@github.com:scf/scf.git
