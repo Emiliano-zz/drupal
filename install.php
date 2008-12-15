@@ -40,6 +40,10 @@ function install_main() {
   drupal_load('module', 'system');
   drupal_load('module', 'filter');
 
+  if (!empty($_GET['profile'])) {
+    $profile = preg_replace('/[^a-zA-Z_0-9]/', '', $_GET['profile']);
+  }
+
   // Set up theme system for the maintenance page.
   drupal_maintenance_theme();
 
